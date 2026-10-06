@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "中心篮球场",
+    "type": "篮球",
+    "location": "校园东区",
+    "hours": "08:00-22:00",
+    "capacity": 40,
+    "status": "开放",
+    "description": "适合篮球教学、日常训练和学生自由活动。"
+  },
+  {
+    "id": 2,
+    "name": "综合足球场",
+    "type": "足球",
+    "location": "校园西区",
+    "hours": "08:00-21:00",
+    "capacity": 60,
+    "status": "开放",
+    "description": "标准草地足球场，可用于课程教学和社团活动。"
+  },
+  {
+    "id": 3,
+    "name": "羽毛球馆",
+    "type": "羽毛球",
+    "location": "体育馆一层",
+    "hours": "09:00-21:30",
+    "capacity": 50,
+    "status": "开放",
+    "description": "室内羽毛球场馆，适合课程和课外锻炼。"
+  },
+  {
+    "id": 4,
+    "name": "乒乓球馆",
+    "type": "乒乓球",
+    "location": "体育馆二层",
+    "hours": "09:00-21:30",
+    "capacity": 30,
+    "status": "开放",
+    "description": "室内乒乓球活动区域，提供多个练习位置。"
+  },
+  {
+    "id": 5,
+    "name": "校园健身房",
+    "type": "健身",
+    "location": "体育馆三层",
+    "hours": "07:30-22:00",
+    "capacity": 80,
+    "status": "开放",
+    "description": "提供基础力量和有氧训练设备。"
+  },
+  {
+    "id": 6,
+    "name": "南区篮球场",
+    "type": "篮球",
+    "location": "校园南区",
+    "hours": "08:00-22:00",
+    "capacity": 30,
+    "status": "开放",
+    "description": "室外篮球场，适合日常投篮和小型对抗。"
+  },
+  {
+    "id": 7,
+    "name": "网球场",
+    "type": "网球",
+    "location": "校园北区",
+    "hours": "08:30-21:00",
+    "capacity": 24,
+    "status": "维护",
+    "description": "网球课程与社团使用场地，当前进行设施维护。"
+  },
+  {
+    "id": 8,
+    "name": "田径场",
+    "type": "田径",
+    "location": "校园体育中心",
+    "hours": "06:30-22:00",
+    "capacity": 120,
+    "status": "开放",
+    "description": "包含标准跑道和田赛区域，可用于跑步和体能训练。"
+  }
+]
