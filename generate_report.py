@@ -511,7 +511,7 @@ fill_table(doc, [
 h1(doc, '六、Git、调试与测试')
 
 h2(doc, '（一）仓库地址与提交历史')
-body(doc, '仓库地址：<请提交后填入 GitHub 仓库 URL>。')
+body(doc, '仓库地址：https://github.com/andyyang0907/fianlwork.git。')
 
 body(doc, '提交规范（按 git log --oneline 输出）：')
 
