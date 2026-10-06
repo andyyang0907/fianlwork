@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>场馆信息 - 校园运动场馆中心</title>
+
+  <link href="libs/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="data:,">
+</head>
+
+<body class="bg-light">
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">🏟️ 校园运动场馆中心</a>
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#nav"
+              aria-controls="nav" aria-expanded="false" aria-label="切换导航">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">首页</a></li>
+          <li class="nav-item"><a class="nav-link active" href="venues.html">场馆信息</a></li>
+          <li class="nav-item"><a class="nav-link" href="data.html">数据统计</a></li>
+          <li class="nav-item"><a class="nav-link" href="scene.html">三维展示</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-4">
+
+    <h1 class="h4 mb-3">场馆信息</h1>
+    <p class="text-muted">搜索、筛选并查看校园运动场馆。</p>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <div class="row g-3 align-items-end">
+          <div class="col-lg-5">
+            <label class="form-label fw-semibold">关键词搜索</label>
+            <input id="search-input" class="form-control" placeholder="输入场馆名称、运动类型或位置">
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <label class="form-label fw-semibold">运动类型</label>
+            <select id="type-select" class="form-select">
+              <option>全部</option>
+              <option>篮球</option>
+              <option>足球</option>
+              <option>羽毛球</option>
+              <option>乒乓球</option>
+              <option>健身</option>
+              <option>网球</option>
+              <option>田径</option>
+            </select>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <label class="form-label fw-semibold">状态</label>
+            <select id="status-select" class="form-select">
+              <option>全部</option>
+              <option>开放</option>
+              <option>维护</option>
+            </select>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <button id="reset-btn" class="btn btn-outline-secondary w-100">重置筛选</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p id="input-error" class="alert alert-warning" style="display: none;"></p>
+    <p id="status" class="alert alert-warning" style="display: none;"></p>
+
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <strong id="result-count">正在加载…</strong>
+      <span class="text-muted small">数据来源：本地 JSON</span>
+    </div>
+
+    <p id="empty-state" class="empty-state" style="display: none;">暂无场馆数据。</p>
+    <p id="no-result" class="empty-state" style="display: none;">没有找到符合条件的场馆，请修改搜索条件。</p>
+
+    <section class="row g-3" id="venue-list"></section>
+
+  </main>
+
+  <!-- 详情弹窗 -->
+  <div class="modal fade" id="detail-modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="detail-title">场馆详情</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body" id="detail-content"></div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="libs/jquery-3.7.1.min.js"></script>
+  <script src="libs/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js?v=2"></script>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+/* 自定义样式：在 Bootstrap 之后引入 */
+
+/* 状态徽章 */
+.status-badge {
+  display: inline-block;
+  padding: 4px 9px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.status-open {
+  color: #18794e;
+  background: #e7f7ef;
+}
+.status-maintenance {
+  color: #9a6700;
+  background: #fff3d6;
+}
+
+/* 数据统计：纯 CSS 柱状图 fallback */
+.bar-chart-fallback {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  padding: 15px 10px 35px;
+  border-bottom: 1px solid #dee2e6;
+  height: 300px;
+}
+.bar-chart-fallback .bar-item {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.bar-chart-fallback .bar {
+  width: 70%;
+  max-width: 46px;
+  background: #0d6efd;
+  border-radius: 5px 5px 0 0;
+}
+.bar-chart-fallback .bar-value {
+  color: #212529;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.bar-chart-fallback .bar-name {
+  color: #6c757d;
+  font-size: 12px;
+  margin-top: 7px;
+  white-space: nowrap;
+}
+
+/* 三维展示容器 */
+.three-box {
+  height: 520px;
+  background: #dce8f0;
+  border-radius: .375rem;
+  overflow: hidden;
+  position: relative;
+}
+.three-box canvas {
+  display: block;
+}
+@media (max-width: 768px) {
+  .three-box { height: 380px; }
+}
+
+/* 提示样式 */
+.empty-state {
+  border: 1px dashed #cbd5df;
+  border-radius: .375rem;
+  padding: 36px;
+  text-align: center;
+  color: #6c757d;
+}

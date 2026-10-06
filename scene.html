@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>三维展示 - 校园运动场馆中心</title>
+
+  <link href="libs/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="data:,">
+</head>
+
+<body class="bg-light">
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">🏟️ 校园运动场馆中心</a>
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#nav"
+              aria-controls="nav" aria-expanded="false" aria-label="切换导航">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">首页</a></li>
+          <li class="nav-item"><a class="nav-link" href="venues.html">场馆信息</a></li>
+          <li class="nav-item"><a class="nav-link" href="data.html">数据统计</a></li>
+          <li class="nav-item"><a class="nav-link active" href="scene.html">三维展示</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-4">
+
+    <h1 class="h4 mb-3">三维运动场馆展示</h1>
+    <p class="text-muted">使用 Three.js 构建简化篮球场，可拖动旋转并使用滚轮缩放。</p>
+
+    <p id="status" class="alert alert-warning" style="display: none;"></p>
+
+    <div id="three-box" class="three-box"></div>
+
+  </main>
+
+  <script src="libs/jquery-3.7.1.min.js"></script>
+  <script src="libs/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js?v=2"></script>
+
+</body>
+</html>

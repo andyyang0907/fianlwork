@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>数据统计 - 校园运动场馆中心</title>
+
+  <link href="libs/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" href="data:,">
+</head>
+
+<body class="bg-light">
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">🏟️ 校园运动场馆中心</a>
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#nav"
+              aria-controls="nav" aria-expanded="false" aria-label="切换导航">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">首页</a></li>
+          <li class="nav-item"><a class="nav-link" href="venues.html">场馆信息</a></li>
+          <li class="nav-item"><a class="nav-link active" href="data.html">数据统计</a></li>
+          <li class="nav-item"><a class="nav-link" href="scene.html">三维展示</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-4">
+
+    <h1 class="h4 mb-3">数据统计</h1>
+    <p class="text-muted">通过图表了解校园运动场馆的整体情况。</p>
+
+    <section class="row g-3 mb-4" id="stats-cards"></section>
+
+    <p id="status" class="alert alert-warning" style="display: none;"></p>
+
+    <div class="row g-3">
+      <div class="col-lg-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="h6 mb-1">各运动类型场馆数量</h2>
+            <p class="text-muted small mb-3">柱状图</p>
+            <div id="bar-chart" style="height: 350px;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="h6 mb-1">场馆容量对比</h2>
+            <p class="text-muted small mb-3">折线图</p>
+            <div style="position: relative; height: 350px;">
+              <canvas id="line-chart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mt-4">
+      <div class="card-body">
+        <h2 class="h6 mb-1">数据观察</h2>
+        <p class="text-muted small mb-2">当前容量最大的场馆：</p>
+        <div class="fw-bold" id="largest-venue">—</div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="libs/jquery-3.7.1.min.js"></script>
+  <script src="libs/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js?v=2"></script>
+
+</body>
+</html>
